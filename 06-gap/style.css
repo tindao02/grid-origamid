@@ -1,0 +1,61 @@
+
+/* Grid */
+.grid {
+	display: grid;
+}
+
+.grid-template {
+	grid-template:
+		"logo       nav       nav"      50px
+		"sidenav    content   advert"   150px
+		"sidenav    footer    footer"   100px
+		/ 100px 1fr 50px;
+}
+
+.gap {
+	gap: 20px;
+}
+
+.column-gap {
+	gap: 2px;
+	column-gap: 20px;
+}
+
+.row-gap {
+	gap: 2px;
+	row-gap: 20px;
+}
+
+
+/* Basico */
+
+body {
+  font-family: 'Courier New', Courier, monospace;
+  color: #333;
+  background-color: rgba(196, 232, 233, 0.521);
+}
+
+h2 {
+  text-align: center;
+  margin: 20px 0 0 0;
+  font-size: 1.25em;
+  font-weight: normal;
+}
+
+.container {
+  max-width: 400px;
+  margin: 0 auto;
+  border: 1px solid #ccc;
+}
+
+/* Item */
+.item {
+  background: tomato;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.item:hover {
+  background: rgba(255, 99, 71, 0.5);
+  font-weight: 700;
+}

@@ -1,3 +1,28 @@
+/* Grid */
+.grid {
+	display: grid;
+}
+
+.grid-template-columns {
+	grid-template-columns: 200px 200px;
+}
+
+.grid-template-columns-3 {
+	grid-template-columns: 1fr 2fr 1fr;
+}
+
+.subgrid {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 10px;
+}
+
+.subgrid > div {
+	background: rgba(0,0,0,.3);
+}
+
+/* Basico */
+
 body {
   font-family: 'Courier New', Courier, monospace;
   color: #333;
@@ -17,7 +42,7 @@ h2 {
   border: 1px solid #ccc;
 }
 
-/* Flex item */
+/* Item */
 .item {
   margin: 5px;
   background: tomato;

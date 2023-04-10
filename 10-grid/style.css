@@ -1,0 +1,62 @@
+/* Grid */
+.grid {
+	display: grid;
+}
+
+.grid-1 {
+	grid: 100px / 1fr 1fr;
+}
+
+.grid-2 {
+	grid: 100px / auto-flow 100px 50px;
+}
+
+.grid-3 {
+	grid:
+		"logo       nav       nav"      50px 
+		"sidenav    content   advert"   150px 
+		"sidenav    footer    footer"   100px 
+	/  100px 1fr 50px;
+}
+
+.logo { grid-area: logo; }
+.nav { grid-area: nav; }
+.content { grid-area: content; }
+.sidenav { grid-area: sidenav; }
+.advert {	grid-area: advert; }
+.footer { grid-area: footer; }
+
+
+/* Basico */
+
+body {
+  font-family: 'Courier New', Courier, monospace;
+  color: #333;
+  background-color: rgba(196, 232, 233, 0.521);
+}
+
+h2 {
+  text-align: center;
+  margin: 20px 0 0 0;
+  font-size: 1.25em;
+  font-weight: normal;
+}
+
+.container {
+  max-width: 400px;
+  margin: 0 auto;
+  border: 1px solid #ccc;
+}
+
+/* Item */
+.item {
+  margin: 5px;
+  background: tomato;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.item:hover {
+  background: rgba(255, 99, 71, 0.5);
+  font-weight: 700;
+}
